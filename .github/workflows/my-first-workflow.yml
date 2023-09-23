@@ -1,13 +1,20 @@
 name: My First Workflow
 
+# # Automatic Trigger
 # on:
 #   push:
 #     branches:
 #       - main
 
-#manual trigger
+# #manual trigger
+# on:
+#   workflow_dispatch
+
+# Scheduled Trigger
 on:
-  workflow_dispatch
+  schedule:
+    - cron: 25 16 * * *
+
 
 jobs:
   build:
