@@ -22,7 +22,7 @@ on:
       - main
   # Scheduled Trigger
   schedule:
-    - cron: 32 * * * *
+    - cron: '32 * * * 1-5'
 
 
 jobs:
