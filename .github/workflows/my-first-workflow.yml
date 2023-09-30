@@ -1,29 +1,19 @@
 name: My First Workflow
 
-# # Automatic Trigger
-# on:
-#   push:
-#     branches:
-#       - main
-
-
 on:
-# # manual trigger
+  # Manual trigger using the workflow_dispatch event
+  workflow_dispatch:
+# # Automatic trigger on push events to the main branch
 #   push:
 #     branches:
 #       - main
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-  # Automatic Trigger
-  pull_request:
-    branches:
-      - main
-  # # Scheduled Trigger
-  # schedule:
-  #   - cron: '32 * * * 1-5'
-
+# # Automatic trigger on pull request events targeting the main branch
+#   pull_request:
+#     branches:
+#       - main
+# # Scheduled trigger at 5:00 AM UTC, Monday through Friday
+#   schedule:
+#     - cron: '0 5 * * 1-5'
 
 jobs:
   build:
