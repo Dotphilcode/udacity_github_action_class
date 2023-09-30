@@ -79,3 +79,8 @@ jobs:
       with:
         name: test-results
         path: test-results.xml
+    - name: notify
+      if: always()
+      run: |
+        echo "GitHub Action is complete"
+
