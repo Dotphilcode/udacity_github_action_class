@@ -20,9 +20,9 @@ on:
   pull_request:
     branches:
       - main
-  # Scheduled Trigger
-  schedule:
-    - cron: '32 * * * 1-5'
+  # # Scheduled Trigger
+  # schedule:
+  #   - cron: '32 * * * 1-5'
 
 
 jobs:
