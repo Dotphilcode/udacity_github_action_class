@@ -56,7 +56,7 @@ jobs:
         node-version: latest
 
     - name: Print a message for main branch
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/master'
       run: echo "This is the main branch."
 
     - name: Print a message for non-main branches
@@ -83,4 +83,3 @@ jobs:
       if: always()
       run: |
         echo "GitHub Action is complete"
-
