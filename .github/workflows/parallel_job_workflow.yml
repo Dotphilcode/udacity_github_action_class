@@ -83,3 +83,6 @@ jobs:
       if: always()
       run: |
         echo "GitHub Action is complete"
+    - name: List all env variables
+      if: always()
+      run: env
